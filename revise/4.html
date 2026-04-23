@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        min-height: 100vh;
+        /* This ensures it covers the screen but can grow */
+        background-color: rgb(48, 48, 48);
+        display: flex;
+        flex-direction: column;
+        /* Stacks form on top, card on bottom */
+        justify-content: flex-start;
+        /* Starts content from the top */
+        align-items: center;
+        padding: 40px 0;
+        /* Adds breathing room at the top and bottom */
+    }
+
+    input {
+        display: block;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 10px;
+
+
+    }
+
+    .card {
+        background-color: rgb(48, 48, 48);
+        border: 2px solid white;
+        border-radius: 10px;
+        max-width: 400px;
+        max-height: max-content;
+        overflow: hidden;
+    }
+
+
+
+    .card h1,
+    .card h3,
+    .card p {
+        margin-left: 14px;
+        padding: 14px;
+        color: white;
+    }
+
+    .profile {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 14px;
+        margin-left: 28px;
+    }
+
+    .profile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email">
+            <input type="submit">
+
+        </form>
+
+        <div class="card">
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1761839256601-e768233e25e7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+
+            <h1>Mayank Roy</h1>
+            <h3>Software Engineer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid praesentium repudiandae ut laboriosam at
+                voluptatem nam nemo optio, nobis id libero voluptatum vitae molestiae tenetur tempore deserunt eaque
+                doloremque ipsum consequatur! Nulla maxime neque cumque incidunt et. Quibusdam eos veniam delectus
+                reprehenderit culpa, aliquid doloremque, unde, saepe earum doloribus et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae error illum ad aut modi alias temporibus
+                excepturi nemo! Voluptatum, enim. Eveniet officiis labore id error commodi rem impedit, nisi officia
+                provident quod suscipit excepturi at, assumenda sed laboriosam. Fugiat nemo cupiditate mollitia tenetur
+                velit labore tempore sit quam. Dicta consectetur possimus, laboriosam enim asperiores ea. Laborum
+                obcaecati doloribus aliquid nesciunt cum. Quod autem sed rem, nisi quia dicta nostrum eligendi nesciunt,
+                ex laborum illo vitae iusto officia facere, aperiam quam!</p>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="4.js"></script>
+</html>
