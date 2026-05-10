@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+
+    #main{
+        width: 100%;
+        height: 100%;
+        background-color: #181717;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    input{
+        margin: 14px;
+        padding: 30px;
+        border: 5px, solid rgb(38, 183, 53);
+        border-radius: 10px;
+        font-style: italic;
+    }
+h1 {
+    color: white;
+    display: block;
+    text-align: center;  /* Centers the text horizontally */
+}
+
+</style>
+<body>
+    <div id="main">
+        <input type="text" placeholder="Write anything.....">
+        <h1>Charracters left : <span>20</span></h1>
+    </div>
+</body>
+<script src="liveChar.js"></script>
+</html>

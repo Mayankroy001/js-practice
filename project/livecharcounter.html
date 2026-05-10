@@ -23,13 +23,33 @@
             height: 100%;
             background-color: rgb(70, 68, 68);
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span{
+            display: block;
+           margin-top: 14px;
+           text-align: center;
+           font-weight: bolder;
+           color: white;
+           font-size: larger;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input{
+            padding: 30px;
+            background-color: rgb(179, 173, 173);
+            border: 4px solid black;
+            border-radius: 10px;
         }
 
 </style>
 <body>
    <div id="main">
      <form >
-        <input type="text" ><span>20 charracters left</span>
+        <input type="text" ><h1>Charracters Charracters left : <span> 20</span></h1>
     </form>
    </div>
     
