@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body{
+        height: 100%;
+       width: 100%;
+    }
+
+   #main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ background-color: rgb(21, 21, 21);
+}
+
+.alert-box {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    transition: opacity 0.5s ease; /* Makes it fade out smoothly */
+    z-index: 9999;
+}
+</style>
+<body>
+    <div id = main>
+        <div id="custom-alert" class="alert-box">
+    Hello, World! I will disappear in 3 seconds.
+</div>
+    </div>
+    
+</body>
+<script src="autohide-alert-banner.js"></script>
+</html>
