@@ -3,7 +3,7 @@ let ct = 20;
 let int = setInterval(function(){
     if(ct>=1){
         console.log(`ct: ${ct} - hello world`);
-        ct--
+        ct--;
     }
 
     else{
