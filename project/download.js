@@ -9,4 +9,4 @@ setInterval(function(){
         progress.style.width = `${count}%`;
         status.textContent = `Downloading... ${count}%`;
     }
-}, 100);
+}, 5000/100);
