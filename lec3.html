@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management Template</title>
+  <link rel="stylesheet" href="lec3.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Add User Form -->
+    <div class="form-card">
+      <h2>Add User</h2>
+      <form id="form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role</label>
+          <input type="text" id="role" placeholder="e.g. Frontend Developer" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea id="bio" placeholder="Write a short bio..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="photoUrl">Photo URL</label>
+          <input type="url" id="photoUrl" placeholder="https://example.com/photo.jpg">
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Users Cards List -->
+    <div class="users-grid" id="usersGrid">
+      <!-- Card 1 -->
+      <div class="user-card">
+        <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" alt="John Doe">
+        <h3 class="user-name">John Doe</h3>
+        <p class="user-role">Frontend Developer</p>
+        <p class="user-bio">Loves building beautiful UIs and learning new technologies.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="user-card">
+        <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200" alt="Jane Smith">
+        <h3 class="user-name">Jane Smith</h3>
+        <p class="user-role">Backend Engineer</p>
+        <p class="user-bio">Enjoys solving complex problems and optimizing APIs.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="user-card">
+        <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Alex Lee">
+        <h3 class="user-name">Alex Lee</h3>
+        <p class="user-role">UI/UX Designer</p>
+        <p class="user-bio">Passionate about user experience and clean design.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="lec3.js"></script>
+</body>
+</html>
