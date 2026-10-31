@@ -1,10 +1,9 @@
 fetch("https://randomuser.me/api/")
 
-.then((rawData){
-
-    console.log(rawData);
+.then((rawdata) =>{
+    console.log(rawdata);
     
-}).catch((err){
+}).catch((err) =>{
     console.log(err);
     
-})
+});
