@@ -26,3 +26,6 @@ return{
 
 }
 }
+
+let iphone = createProduct('iPhone', 710);
+let kitakat = createProduct('Kitkat', 50);

@@ -1,26 +1,26 @@
-let Bank = (function() {
+function createProduct(name, price) {
+    let stock = 10;
 
- let balance = 120000;
+    return {
+        name,
+        price,
 
-  function checkBalance() {
-    return balance;
-  }
+        checkStock() {
+            console.log(`We have ${stock} pieces of ${name} remaining`);
+        },
 
-function setBalance(value) {
-  balance = value;
+        buy(qty) {
+            if (qty <= stock) {
+                stock -= qty;
+                console.log(`${qty} pieces bought - ${stock} remaining`);
+            } else {
+                console.error(`We have only ${stock} pieces remaining`);
+            }
+        },
+
+        restock(qty) {
+            stock += qty;
+            console.log(`${qty} pieces added - ${stock} remaining`);
+        }
+    };
 }
-
-function withDraw(value){
-    if(value <= balance) {
-        balance -= value;
-        console.log("Withdraw : " + value);
-        
-    }
-}
-   
-return {
-    checkBalance,
-    setBalance,
-    withDraw
-};
-})()
