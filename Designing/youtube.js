@@ -34,3 +34,6 @@ class User{
 }
 let devtoolya = new youtubechannel();
 let user = new User('Mayank');
+
+devtoolya.subscribe(user);  
+devtoolya.notify('New video uploaded: JavaScript Design Patterns');
